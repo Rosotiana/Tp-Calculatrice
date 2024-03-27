@@ -46,7 +46,9 @@ public class CalculeTest {
     @Test
     public void testDivision(){
         Calcule div = new Calcule();
-        assertEquals(12,div.division(27, 3));
+        assertEquals(9,div.division(27, 3),0.001);
+        assertEquals(0,div.division(0, 9),0.001);
+        assertEquals(-9,div.division(27, -3),0.001);
     }
     
 }
